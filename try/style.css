@@ -1,0 +1,15 @@
+.icons {
+    background-image: url('https://m.media-amazon.com/images/G/01/gno/sprites/nav-sprite-global-1x-reorg-privacy._CB587940754_.png');
+  }
+  
+  #icon1 {
+    background-position: 0px 0px;
+    width: 50px; /* width of the sprite section */
+    height: 50px; /* height of the sprite section */
+  }
+  
+  #icon2 {
+    background-position: -50px 0px; /* shift the image to the left */
+    width: 50px;
+    height: 50px;
+  }
