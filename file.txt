@@ -1,7 +1,0 @@
-navber color #131921
-height 60 px
-
-search bar color #febd69
-hero bar color #232f3e
-table background color #e3e6e6
-shop now normal color #9fcad1 , hover color #eabeac
