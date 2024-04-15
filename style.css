@@ -4,7 +4,12 @@
     box-sizing: border-box;
     font-family: arial;
 }
+body {
+    width: 100vw;
+    height: 100%;
+}
 .navbar {
+    width: 100%;
     height: 60px;
     background-color:#0f1111;
     color: white;
@@ -22,7 +27,6 @@
     height:100% ;
     width: 100%;
     background-size:cover ;
-    /* padding: 5px; */
 }
 .border {
     border: 1.5px solid transparent;
