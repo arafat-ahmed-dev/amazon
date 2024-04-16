@@ -5,8 +5,10 @@
     font-family: arial;
 }
 body {
-    width: 100vw;
-    height: 100%;
+    min-height: 100vh;
+    width: 100%;
+    height: auto;
+    position: relative;
 }
 .navbar {
     width: 100%;
@@ -175,14 +177,17 @@ a {
 }
 
 .body-layout{
-    background-color:#e3e6e6 ;
-    height: 456vh;
+    background-color: #e3e6e6;
+    min-height: 455vh;
+    height: 100%;
     padding-bottom: 20px;
+    position: relative;
 }
 .hero {
     display: flex;
     justify-content: center;
     color: #cccccc;
+    position: relative;
 }
 .slide-container{
     position: relative;
@@ -290,19 +295,25 @@ span.next:hover, span.prev:hover{
 .layout {
     position: absolute;
     height: 100%;
-    width: 1500px;
-    display: grid;
-    margin-top: 250px;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+    width: 94%;
+    margin-top: 14.75rem;
     justify-content: center;
     padding: 0 20px 0 20px;
+}
+.squre-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    overflow: hidden;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 .Main-box{
     background-color: white;
     color: #0f1111;
-    height: 420px;
-    width: 100%;
+    height: 26rem;
+    width: 21.6rem;
     padding: 20px 0 15px 0;
 }
 .Main-box-p {
@@ -320,7 +331,6 @@ span.next:hover, span.prev:hover{
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
     padding: 10px 15px 50px 15px;
-
 }
 .box-img {
     width: 100%;
@@ -349,11 +359,9 @@ span.next:hover, span.prev:hover{
     padding-bottom: 30px;
 }
 .box-largeimg {
-    height: 303px;
+    height: 18.5rem;
     width: 320px;
-    background-image: url(box2.jpg);
-    background-size: cover;
-    margin: 10px 0 15px 15px;
+    margin: 10px 15px;
 }
 .grid-container {
     display: grid;
@@ -375,9 +383,15 @@ span.next:hover, span.prev:hover{
     gap: 10px;
 }
 .grid-a {
-    /* padding-left: 20px;  */
     color: #0f1111;
     font-size: 15px;
+}
+.rectangular-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
 }
 .largeimg-container {
     display: flex;
@@ -388,7 +402,7 @@ span.next:hover, span.prev:hover{
 }
 .largebox {
     height: auto;
-    width: 1460px;
+    width: 90.4rem;
     color: black;
     background-color: white;
     grid-column-start: 1;
@@ -471,7 +485,7 @@ span.next:hover, span.prev:hover{
 }
 .large-prizebox {
     height: auto;
-    width: 1460px;
+    width: 90.4rem;
     color: black;
     background-color: white;
     grid-column-start: 1;
