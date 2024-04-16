@@ -361,7 +361,7 @@ span.next:hover, span.prev:hover{
 .box-largeimg {
     height: 18.5rem;
     width: 320px;
-    margin: 10px 15px;
+    margin: 10px 15px 25px 15px;
 }
 .grid-container {
     display: grid;
