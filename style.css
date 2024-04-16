@@ -299,7 +299,7 @@ span.next:hover, span.prev:hover{
 		}
 .layout {
     position: relative;
-    z-index: 999;
+    z-index: 1;
     margin-top: -23rem;
     height: 100%;
     width: 95%;
