@@ -317,6 +317,7 @@ span.next:hover, span.prev:hover{
     justify-content: center;
     margin-bottom: 20px;
     margin-top: 20px;
+    display: none;
 }
 .Main-box{
   
@@ -402,6 +403,7 @@ span.next:hover, span.prev:hover{
     justify-content: center;
     gap: 20px;
     width: 100%;
+    display: none;
 }
 .largeimg-container {
     display: flex;
