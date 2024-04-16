@@ -182,9 +182,11 @@ a {
     width: 100%;
     height: 100%;
     padding-bottom: 20px;
+    margin: 0 auto;
   
 }
 .hero {
+    margin: 0 auto;
     position: relative;
     color: #cccccc;
     width: 100%;
@@ -194,7 +196,7 @@ a {
     position: relative;
     z-index: 1;
     margin: 0 auto;
-	width: 100%;
+	width: 95%;
 	height: 600px;
 	box-shadow: 0 0 8px 2px rgba(0,0,0,0.2);
 }
@@ -298,12 +300,10 @@ span.next:hover, span.prev:hover{
 .layout {
     position: relative;
     z-index: 999;
-    margin-top: -199px;
-
-    /* position: absolute; */
-     height: 100%;
-    width: 94%;
-    /* margin-top: 14.75rem; */
+    margin-top: -23rem;
+    height: 100%;
+    width: 95%;
+    margin-left: 2.7rem;
     justify-content: center;
     padding: 0 20px 0 20px; 
 }
@@ -317,7 +317,6 @@ span.next:hover, span.prev:hover{
     justify-content: center;
     margin-bottom: 20px;
     margin-top: 20px;
-    display: none;
 }
 .Main-box{
   
@@ -403,7 +402,6 @@ span.next:hover, span.prev:hover{
     justify-content: center;
     gap: 20px;
     width: 100%;
-    display: none;
 }
 .largeimg-container {
     display: flex;
@@ -700,26 +698,15 @@ span.next:hover, span.prev:hover{
 }
 
 
-@media (min-width:0px) and (max-width: 600px) {
+ /* @media (max-width: 600px) {
     .squre-box {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        /* flex-wrap: wrap; */
-        /* gap: 20px; */
-        /* overflow: hidden; */
+        overflow: hidden; 
         justify-content: center;
         margin-bottom: 20px;
         margin-top: 20px;
     }
 
-    .Main-box{
-        background-color: white;
-        color: #0f1111;
-        height: 100px;
-        width: 80vw;
-        padding: 20px 0 15px 0;
-    }
 
-
-
-  }
+} */
