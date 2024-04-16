@@ -8,7 +8,7 @@ body {
     min-height: 100vh;
     width: 100%;
     height: auto;
-    position: relative;
+    /* position: relative; */
 }
 .navbar {
     width: 100%;
@@ -178,20 +178,23 @@ a {
 
 .body-layout{
     background-color: #e3e6e6;
-    min-height: 455vh;
+    min-height: 45vh;
+    width: 100%;
     height: 100%;
     padding-bottom: 20px;
-    position: relative;
+  
 }
 .hero {
-    display: flex;
-    justify-content: center;
-    color: #cccccc;
     position: relative;
+    color: #cccccc;
+    width: 100%;
+    
 }
 .slide-container{
     position: relative;
-	width: 1500px;
+    z-index: 1;
+    margin: 0 auto;
+	width: 100%;
 	height: 600px;
 	box-shadow: 0 0 8px 2px rgba(0,0,0,0.2);
 }
@@ -293,26 +296,33 @@ span.next:hover, span.prev:hover{
 			}
 		}
 .layout {
-    position: absolute;
-    height: 100%;
+    position: relative;
+    z-index: 999;
+    margin-top: -199px;
+
+    /* position: absolute; */
+     height: 100%;
     width: 94%;
-    margin-top: 14.75rem;
+    /* margin-top: 14.75rem; */
     justify-content: center;
-    padding: 0 20px 0 20px;
+    padding: 0 20px 0 20px; 
 }
 .squre-box {
-    display: flex;
-    flex-wrap: wrap;
+  
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* flex-wrap: wrap; */
     gap: 20px;
-    overflow: hidden;
+    /* overflow: hidden; */
     justify-content: center;
     margin-bottom: 20px;
     margin-top: 20px;
 }
 .Main-box{
+  
     background-color: white;
     color: #0f1111;
-    height: 26rem;
+    /* height: 26rem; */
     width: 21.6rem;
     padding: 20px 0 15px 0;
 }
@@ -463,7 +473,7 @@ span.next:hover, span.prev:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow-y:hidden ;
+    /* overflow-y:hidden ; */
 
 }
 .large-box-img {
@@ -686,3 +696,28 @@ span.next:hover, span.prev:hover{
 .web-footer a {
     color: white;
 }
+
+
+@media (min-width:0px) and (max-width: 600px) {
+    .squre-box {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        /* flex-wrap: wrap; */
+        /* gap: 20px; */
+        /* overflow: hidden; */
+        justify-content: center;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .Main-box{
+        background-color: white;
+        color: #0f1111;
+        height: 100px;
+        width: 80vw;
+        padding: 20px 0 15px 0;
+    }
+
+
+
+  }
