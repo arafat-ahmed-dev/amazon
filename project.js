@@ -1,5 +1,5 @@
 // Access the Images
-	let slideImages = document.querySelectorAll('img');
+	let slideImages = document.querySelectorAll('.slide-img');
 	// Access the next and prev buttons
 	let next = document.querySelector('.next');
 	let prev = document.querySelector('.prev');
