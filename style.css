@@ -8,7 +8,6 @@ body {
     min-height: 100vh;
     width: 100%;
     height: auto;
-    /* position: relative; */
 }
 .navbar {
     width: 100%;
@@ -308,21 +307,16 @@ span.next:hover, span.prev:hover{
     padding: 0 20px 0 20px; 
 }
 .squre-box {
-  
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    /* flex-wrap: wrap; */
     gap: 20px;
-    /* overflow: hidden; */
     justify-content: center;
     margin-bottom: 20px;
     margin-top: 20px;
 }
 .Main-box{
-  
     background-color: white;
     color: #0f1111;
-    /* height: 26rem; */
     width: 21.6rem;
     padding: 20px 0 15px 0;
 }
@@ -492,6 +486,13 @@ span.next:hover, span.prev:hover{
 .discount-detals {
     color: #CC0C39;
     font-size: 12px;
+}
+.rec-prizebox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
 }
 .large-prizebox {
     height: auto;
@@ -663,7 +664,8 @@ span.next:hover, span.prev:hover{
     padding-top: 30px;
 } 
 .footer-line td {
-    height: 80.95px;
+    height: auto;
+    width: auto;
 }
 .footer-line a {
     color: #DDDDDD;
@@ -696,17 +698,3 @@ span.next:hover, span.prev:hover{
 .web-footer a {
     color: white;
 }
-
-
- /* @media (max-width: 600px) {
-    .squre-box {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        overflow: hidden; 
-        justify-content: center;
-        margin-bottom: 20px;
-        margin-top: 20px;
-    }
-
-
-} */

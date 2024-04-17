@@ -1,0 +1,37 @@
+@media (max-width: 600px) {
+    .squre-box{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+    .rectangular-box{
+        display: none;
+    }
+    .largeimg-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        gap: 30px;
+        align-items: center;
+    }
+    .Main-box{
+        background-color: white;
+        color: #0f1111;
+        width: 100%;
+        padding: 20px 0 15px 0;
+    }
+    .layout{
+        top: -30rem;
+        margin: 0 auto;
+    }
+    .footer-details {
+        display: flex;
+        gap: 10px;
+        padding: 30px 0;
+        justify-content: center;
+        height: 82%;
+        border-bottom: 0.2px solid #DDDDDD;
+    }
+}
