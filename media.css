@@ -1,6 +1,7 @@
 @media (max-width: 600px) {
-    .hero{
-        height: auto;
+    .body-layout{
+        min-height: 418px;
+        height: 100%;
     }
     .squre-box{
         width: 100%;
@@ -158,5 +159,63 @@
     }
     .large-prize-box-img {
         width: 100%;
+    }
+    .signin-var{
+        width: 90%;
+    }
+    .foooter-head {
+        justify-content: center;
+    }
+    .footer-nav{
+        display: none;
+    }
+    .rec-footer-details{
+        display: block;
+    }
+    .rec-footer-details {
+        background-color: #232f3e;
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        height: 100%;
+        padding: 20px;
+    }
+    ul{
+        list-style-type: none;
+    }
+    .rec-footer-details li{
+        padding-bottom: 10px;
+    }
+    .footer-line{
+        display: none;
+    }
+    .rec-web-footer {
+        font-size: 10px;
+        background-color: #131a22;
+        padding: 10px 0 20px;
+    }
+    .rec-web-footer p {
+        text-align: center;
+        color: white;
+        margin: 0 auto;
+    }
+    .rec-web-footer ul{
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        padding: 0;
+        margin: 0 auto;
+        /* padding: 20px 0 5px; */
+    }
+    .rec-web-footer li {
+        gap: 5px;
+    }
+    .rec-web-footer a:hover {
+        text-decoration: underline;
+    }
+    .rec-web-footer a {
+        color: white;
     }
 }

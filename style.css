@@ -584,6 +584,9 @@ span.next:hover, span.prev:hover{
     background-color: #232f3e;
     color: white;
 }
+.rec-footer-details {
+    display: none;
+}
 .footer-details {
     display: flex;
     gap: 100px;
