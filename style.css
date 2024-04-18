@@ -705,4 +705,6 @@ span.next:hover, span.prev:hover{
 .web-footer a {
     color: white;
 }
-
+.rec-web-footer{
+    display: none;
+}
