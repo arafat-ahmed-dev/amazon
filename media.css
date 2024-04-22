@@ -1,11 +1,17 @@
-@media (max-width: 600px) {
+@media (min-width: 320px) and (max-width: 480px) {
     .body-layout{
-        min-height: 418px;
+        min-height: 9710px;
         height: 100%;
     }
     .hero{
-        height: 9480px;
+        height: 80%;
     }
+    .layout{
+        height: 80%;
+    }
+    /* .hero{
+        height: 1vh;
+    } */
     .squre-box{
         width: 100%;
         display: grid;
