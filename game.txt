@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <style>
+        /* Add some basic styling to make the game look better */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+       .container {
+            width: 80%;
+            margin: 40px auto;
+        }
+       .image {
+            width: 100px;
+            height: 100px;
+            border: 1px solid #ccc;
+            border-radius: 50%;
+            cursor: pointer;
+            margin: 20px;
+        }
+       .image:hover {
+            transform: scale(1.1);
+        }
+       .res {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+       .score {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Rock Paper Scissors</h1>
+        <div class="choices">
+            <img class="image" id="rock" src="rock.png" alt="Rock">
+            <img class="image" id="paper" src="paper.png" alt="Paper">
+            <img class="image" id="scissor" src="scissor.png" alt="Scissor">
+        </div>
+        <div class="result">
+            <p class="res"></p>
+        </div>
+        <div class="scores">
+            <p class="name">You</p>
+            <p class="score scL">0</p>
+            <p class="name">Computer</p>
+            <p class="score scR">0</p>
+        </div>
+    </div>
+    <script>
+        const choices = document.querySelectorAll(".image");
+        const result = document.querySelector(".res");
+        const userScore = document.querySelector(".scL");
+        const compScore = document.querySelector(".scR");
+
+        let userPoints = 0;
+        let compPoints = 0;
+
+        choices.forEach(choice => {
+            choice.addEventListener("click", () => {
+                const userChoice = choice.getAttribute("id");
+                const compChoice = getComputerChoice();
+                const winner = determineWinner(userChoice, compChoice);
+
+                result.textContent = `${userChoice} vs ${compChoice} - ${winner}`;
+                updateScores(winner);
+            });
+        });
+
+        function getComputerChoice() {
+            const options = ["rock", "paper", "scissor"];
+            return options[Math.floor(Math.random() * options.length)];
+        }
+
+        function determineWinner(userChoice, compChoice) {
+            if (userChoice === compChoice) return "It's a tie!";
+            if (userChoice === "rock" && compChoice === "scissor") return "You win!";
+            if (userChoice === "paper" && compChoice === "rock") return "You win!";
+            if (userChoice === "scissor" && compChoice === "paper") return "You win!";
+            return "Computer wins!";
+        }
+
+        function updateScores(winner) {
+            if (winner === "You win!") {
+                userPoints++;
+                userScore.textContent = userPoints;
+            } else if (winner === "Computer wins!") {
+                compPoints++;
+                compScore.textContent = compPoints;
+            }
+        }
+    </script>
+</body>
+</html>
