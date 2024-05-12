@@ -197,10 +197,7 @@ a {
     width: 100%;
     
 }
-.slides{
-    box-shadow: 0 30px 40px rgba(255, 255, 255, 0.1);
 
-}
 .slide-container{
     position: relative;
     z-index: 1;
